@@ -1,0 +1,27 @@
+{
+  "model": "sonnet",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[Session ended at '$(date)']' >> .claude/session.log"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[File written: '\"$CLAUDE_TOOL_INPUT\"']' >> .claude/session.log 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,3 +1,8 @@
+---
+description: Scan codebase for security vulnerabilities including secrets, injection, and auth issues
+argument-hint: optional file or directory to scan
+---
+
 Perform a security audit of the current codebase or file: $ARGUMENTS
 
 Check for:

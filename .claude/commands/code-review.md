@@ -1,3 +1,8 @@
+---
+description: Review code for quality, bugs, security issues, and style consistency
+argument-hint: optional file, PR number, or commit to review
+---
+
 Review the code changes since the last commit (or the file/PR: $ARGUMENTS).
 
 Evaluate:

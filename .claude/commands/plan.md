@@ -1,3 +1,8 @@
+---
+description: Create an implementation plan before starting work on a feature or fix
+argument-hint: feature or task description
+---
+
 Analyze the task "$ARGUMENTS" and produce an implementation plan:
 
 1. Search the codebase for related existing code
